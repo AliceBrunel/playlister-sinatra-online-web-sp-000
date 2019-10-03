@@ -8,7 +8,7 @@ use Rack::Flash
   	@songs = Song.all
   	erb :'song/songs'
   end
-
+ # The route order make the :slug == "new" if new is after slug
   get '/songs/new' do
   	erb :'song/form'
   end
